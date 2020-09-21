@@ -1,0 +1,35 @@
+.timer {
+  display: flex;
+  justify-content: space-around;
+  width: 70vw;
+  padding: 5vh 0;
+
+  &__two,
+  &__one,
+  &__half {
+    text-align: center;
+
+    &__clock {
+      font-size: 24px;
+    }
+
+    &__button {
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+      font-family: 'Orbitron', sans-serif;
+      padding: 8px 32px;
+      transition-duration: 0.4s;
+      margin: 4px 2px;
+      border: solid 1px $white;
+      border-radius: 4px;
+
+      &:hover {
+        color: $white;
+        background-color: $black;
+      }
+    }
+  }
+}

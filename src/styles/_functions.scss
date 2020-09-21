@@ -1,0 +1,11 @@
+@for $i from 1 through 60 {
+  section:nth-of-type(#{$i}) {
+    transform: rotateZ(calc(6deg * #{$i}));
+  }
+}
+
+@keyframes time {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
